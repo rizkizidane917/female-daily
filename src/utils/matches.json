@@ -1,0 +1,28 @@
+{
+  "matches": [
+    {
+      "title": "Match Skin Type",
+      "rating": "4.9",
+      "name": "Val By Valerie Thomes",
+      "desc": "Pure Pressed Blush",
+      "category": "Neutral Rose",
+      "image": "/img/matches-img.png"
+    },
+    {
+      "title": "Match Skin Type",
+      "rating": "4.9",
+      "name": "Val By Valerie Thomes",
+      "desc": "Phito Pigment Liquid Serum Foundation",
+      "category": "Neutral Rose",
+      "image": "/img/matches-img.png"
+    },
+    {
+      "title": "Match Skin Type",
+      "rating": "4.9",
+      "name": "Val By Valerie Thomes",
+      "desc": "Pure Pressed Blush",
+      "category": "Neutral Rose",
+      "image": "/img/matches-img.png"
+    }
+  ]
+}

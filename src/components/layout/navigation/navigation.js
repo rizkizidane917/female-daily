@@ -6,7 +6,7 @@ import NavigationSearch from "./navigation-search";
 export default function Navigation() {
   return (
     <header className="w-full">
-      <nav className="flex  gap-4 items-center">
+      <nav className="flex gap-4 items-center">
         <div className="pl-2">
           <img src="/icons/menu.svg" className="h-6" />
         </div>

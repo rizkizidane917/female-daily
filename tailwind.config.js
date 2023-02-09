@@ -5,7 +5,7 @@ module.exports = {
       colors: {
         primary: "#DC294F",
         secondary: "#D8D8D8",
-        tertiary: "#969696",
+        tertiary: "#A6A6A6",
       },
       fontSize: {
         h1: "24px",

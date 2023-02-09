@@ -1,7 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-}
-
-module.exports = nextConfig
+module.exports = {
+  env: {
+    api_web: process.env.API_WEB,
+  },
+  images: {
+    domains: ["virtserver.swaggerhub.com"],
+  },
+};
