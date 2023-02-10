@@ -4,7 +4,7 @@ import BannerCampaign from "@/components/organisms/BannerCampaign/banner-campaig
 import BannerTop from "@/components/organisms/BannerTop/banner-top";
 import EditorChoice from "@/components/organisms/EditorChoice/editor-choice";
 import Matches from "@/components/organisms/Matches/matches";
-// import Reviews from "@/components/organisms/Reviews/reviews";
+import Reviews from "@/components/organisms/Reviews/reviews";
 import React from "react";
 import Layout from "../components/layout/layout";
 
@@ -19,7 +19,7 @@ export default function Homepage() {
       <Container>
         <BannerCampaign />
         <Articles />
-        {/* <Reviews /> */}
+        <Reviews />
       </Container>
     </Layout>
   );

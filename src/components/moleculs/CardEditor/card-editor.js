@@ -1,6 +1,6 @@
 import Typography from "@/components/atoms/Typography";
 import React from "react";
-import { StarIcon } from "@heroicons/react/solid";
+import Star from "@/components/atoms/Star/star";
 export default function CardEditor({ list }) {
   return (
     <div className="mt-6">
@@ -32,22 +32,7 @@ export default function CardEditor({ list }) {
               <Typography type="h5" className="font-semibold">
                 {list?.product?.rating}
               </Typography>
-              {/* Star */}
-              <div className="flex items-center mb-0.5">
-                {Array(5)
-                  .fill()
-                  .map((_, i) => {
-                    const rating = Math.floor(list?.product?.rating);
-                    return (
-                      <StarIcon
-                        key={i + 1}
-                        className={`w-5 h-5 ${
-                          i < rating ? "text-primary" : "text-secondary"
-                        }`}
-                      />
-                    );
-                  })}
-              </div>
+              <Star rating={list?.product?.rating} />
               <Typography type="p" className="font-normal">
                 (7)
               </Typography>

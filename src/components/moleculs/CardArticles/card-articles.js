@@ -6,7 +6,7 @@ export default function CardArticles({ articles }) {
     <div className="pb-5">
       <div className="mb-4">
         <img
-          className="rounded-xl w-full h-full object-cover"
+          className="rounded-lg w-full h-full object-cover"
           src={articles?.image}
           alt="Logo FDN"
         />

@@ -1,12 +1,13 @@
 import { useListData } from "@/api/service/use-listData";
 import Typography from "@/components/atoms/Typography";
+import CarouselReviews from "@/components/moleculs/CarouselReviews/carousel-reviews";
 import { ChevronRightIcon } from "@heroicons/react/solid";
 import React from "react";
 
 export default function Reviews() {
   const { getListAllData } = useListData();
   const doFetchList = getListAllData();
-  console.log(doFetchList?.data);
+
   return (
     <section className="py-6">
       <div className="grid grid-cols-12 gap-4">
@@ -20,13 +21,18 @@ export default function Reviews() {
                 So you can make better purchase decision
               </Typography>
             </div>
-            <a className="cursor-pointer border-b hover:border-b-primary pb-1 border-transparent inline-flex items-center gap-1">
+            <a className="cursor-pointer border-b hover:border-b-primary pb-1 border-transparent inline-flex items-center gap-3">
               <Typography type="h4" className="text-primary">
                 See More
               </Typography>
-              <ChevronRightIcon className="text-primary h-4" />
+              <ChevronRightIcon className="text-primary h-5" />
             </a>
           </div>
+          {doFetchList?.isFetching == true ? (
+            "Loading..."
+          ) : (
+            <CarouselReviews review={doFetchList?.data?.["latest review"]} />
+          )}
         </div>
         <div className=" col-span-4 relative">
           <div className="flex items-center absolute right-0 top-16">

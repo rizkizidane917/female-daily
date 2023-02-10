@@ -1,5 +1,5 @@
+import Star from "@/components/atoms/Star/star";
 import Typography from "@/components/atoms/Typography";
-import { StarIcon } from "@heroicons/react/solid";
 import React from "react";
 
 export default function CardMatches({ matches }) {
@@ -16,26 +16,12 @@ export default function CardMatches({ matches }) {
               {matches.rating}
             </Typography>
             {/* Star */}
-            <div className="flex items-center mb-0.5">
-              {Array(5)
-                .fill()
-                .map((_, i) => {
-                  const rating = Math.floor(matches.rating);
-                  return (
-                    <StarIcon
-                      key={i + 1}
-                      className={`w-5 h-5 ${
-                        i < rating ? "text-primary" : "text-secondary"
-                      }`}
-                    />
-                  );
-                })}
-            </div>
+            <Star rating={matches?.rating} />
             <Typography type="p" className="font-normal">
               (7)
             </Typography>
           </div>
-          <Typography type="h5" className="font-semibold py-1">
+          <Typography type="h5" className="font-semibold py-1 leading-4">
             {matches.name}
           </Typography>
           <Typography type="p" className="leading-4">
