@@ -3,9 +3,11 @@ import Articles from "@/components/organisms/Articles/articles";
 import BannerCampaign from "@/components/organisms/BannerCampaign/banner-campaign";
 import BannerTop from "@/components/organisms/BannerTop/banner-top";
 import EditorChoice from "@/components/organisms/EditorChoice/editor-choice";
+import LatestVideos from "@/components/organisms/LatestVideos/latest-videos";
 import Matches from "@/components/organisms/Matches/matches";
 import PopularGroups from "@/components/organisms/PopularGroups/popular-groups";
 import Reviews from "@/components/organisms/Reviews/reviews";
+import WeeklyTrending from "@/components/organisms/WeeklyTrending/weekly-trending";
 import React from "react";
 import Layout from "../components/layout/layout";
 
@@ -22,6 +24,8 @@ export default function Homepage() {
         <Articles />
         <Reviews />
         <PopularGroups />
+        <LatestVideos />
+        <WeeklyTrending />
       </Container>
     </Layout>
   );
