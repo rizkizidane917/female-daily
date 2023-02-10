@@ -79,8 +79,8 @@ export default function CarouselReviews({ review }) {
             <div className="w-[22.5rem]  flex justify-center ">
               <div className="flex flex-col relative -mt-5 items-center">
                 <img
-                  className="w-8 h-8 object-cover rounded-full border-2"
-                  src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+                  className="w-9 h-9 object-cover rounded-full border-2"
+                  src="https://images.unsplash.com/photo-1500522144261-ea64433bbe27?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
                 />
                 <Typography type="h5" className="capitalize">
                   {review?.user}
