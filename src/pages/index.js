@@ -7,6 +7,7 @@ import LatestVideos from "@/components/organisms/LatestVideos/latest-videos";
 import Matches from "@/components/organisms/Matches/matches";
 import PopularGroups from "@/components/organisms/PopularGroups/popular-groups";
 import Reviews from "@/components/organisms/Reviews/reviews";
+import TopBrands from "@/components/organisms/TopBrands/top-brands";
 import WeeklyTrending from "@/components/organisms/WeeklyTrending/weekly-trending";
 import React from "react";
 import Layout from "../components/layout/layout";
@@ -26,6 +27,7 @@ export default function Homepage() {
         <PopularGroups />
         <LatestVideos />
         <WeeklyTrending />
+        <TopBrands />
       </Container>
     </Layout>
   );

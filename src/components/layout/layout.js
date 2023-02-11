@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React, { Fragment } from "react";
+import Footer from "./Footer/footer";
 import styles from "./Layout.module.css";
 import Navigation from "./navigation/navigation";
 export default function Layout({ pageTitle, children }) {
@@ -22,7 +23,7 @@ export default function Layout({ pageTitle, children }) {
       <div className={styles.container}>
         <Navigation />
         <div className={styles.content}>{children}</div>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Fragment>
   );
