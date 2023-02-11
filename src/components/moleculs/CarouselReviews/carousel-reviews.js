@@ -1,6 +1,7 @@
 import ReadMore from "@/components/atoms/ReadMore/read-more";
 import Star from "@/components/atoms/Star/star";
 import Typography from "@/components/atoms/Typography";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline";
 import React, { Fragment } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -24,10 +25,36 @@ export default function CarouselReviews({ review }) {
     },
   };
 
+  const ArrowLeftSide = ({ onClick }) => {
+    return (
+      <button
+        className="css-left-carousel cursor-pointer hover:shadow-lg duration-200 transition ease-in-out "
+        onClick={() => onClick()}
+      >
+        <span className="text-primary flex items-center justify-center">
+          <ChevronLeftIcon className="h-6 text-primary" />
+        </span>
+      </button>
+    );
+  };
+  const ArrowRightSide = ({ onClick }) => {
+    return (
+      <button
+        className="css-arrow-right-carousel bg-transparent hover:shadow-lg duration-200 transition ease-in-out"
+        onClick={() => onClick()}
+      >
+        <span className="text-black flex items-center justify-center">
+          <ChevronRightIcon className="h-6 text-black" />
+        </span>
+      </button>
+    );
+  };
   return (
     <Carousel
       responsive={responsive}
       additionalTransfrom={0}
+      customLeftArrow={<ArrowLeftSide />}
+      customRightArrow={<ArrowRightSide />}
       arrows={true}
       autoPlaySpeed={3000}
       centerMode={false}
@@ -43,7 +70,7 @@ export default function CarouselReviews({ review }) {
       renderDotsOutside={false}
       showDots={true}
       slidesToSlide={2}
-      infinite={false}
+      infinite={true}
     >
       {review.map((review, index) => {
         return (

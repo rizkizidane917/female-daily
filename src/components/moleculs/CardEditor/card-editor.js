@@ -3,7 +3,7 @@ import React from "react";
 import Star from "@/components/atoms/Star/star";
 export default function CardEditor({ list }) {
   return (
-    <div className="mt-6">
+    <div className="mt-4">
       <div className="flex items-start gap-2 mx-4 relative top-3">
         <img
           className="w-14 h-14 object-cover rounded-full"

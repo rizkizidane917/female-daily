@@ -7,7 +7,7 @@ export default function NavigationList() {
         {NavList?.list?.map((list, index) => {
           return (
             <li className="py-2 px-4" key={index + 1}>
-              {list?.name}
+              <a className="cursor-pointer text-p">{list?.name}</a>
             </li>
           );
         })}
