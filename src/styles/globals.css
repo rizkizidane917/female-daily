@@ -6,7 +6,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400 !important;
 }
 
@@ -19,39 +19,6 @@ a {
   box-sizing: border-box;
 }
 
-.calc {
-  max-width: calc(100% - 32px);
-}
-
-.content-wrapper {
-  width: 100%;
-}
-@media (min-width: 640px) {
-  .content-wrapper {
-    max-width: 640px;
-  }
-}
-@media (min-width: 768px) {
-  .content-wrapper {
-    max-width: 768px;
-  }
-}
-@media (min-width: 1024px) {
-  .content-wrapper {
-    max-width: 1024px;
-  }
-}
-@media (min-width: 1280px) {
-  .content-wrapper {
-    max-width: 1280px;
-  }
-}
-@media (min-width: 1440px) {
-  .content-wrapper {
-    max-width: 1440px;
-  }
-}
-
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -61,3 +28,44 @@ a {
     background: black;
   }
 } */
+
+.react-multi-carousel-dot--active button {
+  /* background: #080808; */
+  background: #dc294f !important;
+}
+.react-multi-carousel-dot button {
+  background: !9D737D !important;
+}
+
+.css-left-carousel {
+  top: 92%;
+  position: absolute;
+  font-size: 0px;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  background-size: 100%;
+  border-radius: 50%;
+  transition: all 0.25s ease 0s;
+  left: 42%;
+}
+
+.css-arrow-right-carousel {
+  top: 92%;
+  position: absolute;
+  font-size: 0px;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  background-size: 100%;
+  border-radius: 50%;
+  transition: all 0.25s ease 0s;
+
+  right: 43%;
+}

@@ -14,7 +14,7 @@ export default function Matches() {
         </div>
         <Container>
           <div className="grid grid-cols-5 gap-6">
-            <div className=" col-span-2 ml-28 w-3/4 flex flex-col my-auto leading-7">
+            <div className=" col-span-2 ml-28 w-[70%] flex flex-col my-auto leading-7">
               <Typography type="h1" className="font-bold">
                 Looking for products that are just simply perfect for you?
               </Typography>

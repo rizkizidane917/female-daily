@@ -28,7 +28,7 @@ export default function CarouselReviews({ review }) {
   const ArrowLeftSide = ({ onClick }) => {
     return (
       <button
-        className="css-left-carousel cursor-pointer hover:shadow-lg duration-200 transition ease-in-out "
+        className="css-left-carousel hover:bg-primary/20 cursor-pointer hover:shadow-lg duration-200 transition ease-in-out "
         onClick={() => onClick()}
       >
         <span className="text-primary flex items-center justify-center">
@@ -40,15 +40,16 @@ export default function CarouselReviews({ review }) {
   const ArrowRightSide = ({ onClick }) => {
     return (
       <button
-        className="css-arrow-right-carousel bg-transparent hover:shadow-lg duration-200 transition ease-in-out"
+        className="css-arrow-right-carousel hover:bg-primary/20 bg-transparent hover:shadow-lg duration-200 transition ease-in-out"
         onClick={() => onClick()}
       >
-        <span className="text-black flex items-center justify-center">
-          <ChevronRightIcon className="h-6 text-black" />
+        <span className="text-primary flex items-center justify-center">
+          <ChevronRightIcon className="h-6 text-primary" />
         </span>
       </button>
     );
   };
+
   return (
     <Carousel
       responsive={responsive}

@@ -9,7 +9,7 @@ export default function EditorChoice() {
   return (
     <section title="editor-choice" className="py-6">
       <HeadlineItems
-        title="  Editor's Choice"
+        title="Editor's Choice"
         sub=" Curated with love"
         goto=""
         links="/"
